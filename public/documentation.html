@@ -110,11 +110,12 @@
             including an ID </td>
         </tr>
         <tr>
-          <td>Allow new users update their user info</td>
+          <td>Allow new users update their user info(username)</td>
           <td>/users/:Username</td>
           <td>PUT</td>
           <td>:Username</td>
-          <td>-</td>
+          <td>A JSON object holding data about the username to update, structured like this:
+            { "Username": "User1"} </td>
           <td>A JSON object holding data about the updated information</td>
         </tr>
         <tr>
