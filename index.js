@@ -7,49 +7,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// let topMovies = [
-//   {
-//     title: "Harry Potter and the Chamber of Secrets",
-//     director: "Chris Columbus",
-//   },
-//   {
-//     title: "Lord of the Rings: The Fellowship of the Ring",
-//     director: "Peter Jackson",
-//   },
-//   {
-//     title: "Pride and Prejudice",
-//     director: "Joe Wright",
-//   },
-//   {
-//     title: "Harry Potter and the Goblet of Fire",
-//     director: "Mike Newell",
-//   },
-//   {
-//     title: "Coco",
-//     director: "Lee Unkrich and Adrian Molina ",
-//   },
-//   {
-//     title: "The Lord of the Rings: The Two Towers",
-//     director: "Peter Jackson",
-//   },
-//   {
-//     title: "The Dark Knight",
-//     director: "Christopher Nolan",
-//   },
-//   {
-//     title: "Schindler's List",
-//     director: "Steven Spielberg",
-//   },
-//   {
-//     title: "Forrest Gump",
-//     director: "Robert Zemeckis",
-//   },
-//   {
-//     title: "Back to the Future",
-//     director: "Robert Zemeckis",
-//   },
-// ];
-
 let users = [
   {
     id: 1,
