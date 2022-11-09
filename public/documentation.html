@@ -103,11 +103,21 @@
           <td>/users</td>
           <td>POST</td>
           <td>-</td>
-          <td>A JSON object holding data about the users to add, structured like this:
-            { "Username": "User1","Password": "Test123","Email": "test@mail.com","Birthday": "05.03.1980"}</td>
-          <td>A JSON object holding data about the user that was added, structured like this { "username" : "User1",
-            "Password": "Test123", "Email": "test@mail.com", "Birthday": "05.03.1980", "favorite movie" : [] }
-            including an ID </td>
+          <td>A JSON object holding data about the users to add, with the following structure:
+            {
+            "Username": String (John),
+            "Password": String(12334),
+            "Email": String(john@gmail.com),
+            "Birthday": Date(1988-02-23)
+            }</td>
+          <td>A JSON object holding data about the user that was added, with the following structure: {
+            "ID": Integer,
+            "Username": String (John),
+            "Password": String(12334),
+            "Email": String(john@gmail.com),
+            "Birthday": Date(1988-02-23)
+            "FavoriteMovies" : [] }
+          </td>
         </tr>
         <tr>
           <td>Allow new users update their user info(username)</td>
