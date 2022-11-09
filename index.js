@@ -4,18 +4,18 @@ const express = require("express"),
   morgan = require("morgan");
 const { add, trimEnd } = require("lodash");
 const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const mongoose = require("mongoose");
 const Models = require("./models.js");
 
 const Movies = Models.Movie;
 const Users = Models.User;
-mongoose.connect("mongodb://localhost:27017/FavFlixDB", {
+mongoose.connect("mongodb://0.0.0.0:27017/FavFlix", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
-app.use(bodyParser.json());
 
 app.use(express.static("public"));
 app.use(morgan("common"));
@@ -61,7 +61,7 @@ app.get("/users", (req, res) => {
 });
 
 //READ by username
-app.get("users/:Username", (req, res) => {
+app.get("/users/:Username", (req, res) => {
   Users.findOne({ Username: req.params.Username })
     .then((user) => {
       res.json(user);
