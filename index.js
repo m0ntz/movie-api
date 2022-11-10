@@ -95,16 +95,6 @@ app.get("/movies/:Title", (req, res) => {
       res.status(500).send("Error: " + err);
     });
 });
-//   //const title = req.params.title; -> is the same as below.
-//   const { title } = req.params;
-//   const movie = movies.find((movie) => movie.Title === title);
-
-//   if (movie) {
-//     res.status(200).json(movie);
-//   } else {
-//     res.status(400).send("Movie not found");
-//   }
-// });
 
 // READ Genre
 app.get("/movies/genres/:Name", (req, res) => {
@@ -115,14 +105,6 @@ app.get("/movies/genres/:Name", (req, res) => {
     .catch((err) => {
       res.status(500).send("Error: " + err);
     });
-  // const { genreName } = req.params;
-  // const genre = movies.find((movie) => movie.Genre.Name === genreName).Genre;
-
-  // if (genre) {
-  //   res.status(200).json(genre);
-  // } else {
-  //   res.status(400).send("Genre not found");
-  // }
 });
 
 //READ Director
@@ -195,20 +177,6 @@ app.delete("/users/:Username/movies/:MovieID", (req, res) => {
       }
     }
   );
-  // const { id, movieTitle } = req.params;
-
-  // let user = users.find((user) => user.id == id);
-
-  // if (user) {
-  //   user.favoriteMovies = user.favoriteMovies.filter(
-  //     (title) => title !== movieTitle
-  //   );
-  //   res
-  //     .status(200)
-  //     .send(`${movieTitle} has been removed from user ${id}'s array`);
-  // } else {
-  //   res.status(400).send("no such user");
-  // }
 });
 
 //DELETE a user by username
