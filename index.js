@@ -21,10 +21,11 @@ const Models = require("./models.js");
 
 const Movies = Models.Movie;
 const Users = Models.User;
-mongoose.connect("mongodb://0.0.0.0:27017/FavFlix", {
+mongoose.connect(process.env.CONNECTION_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+// mongoose.connect("mongodb://0.0.0.0:27017/FavFlix", {
 
 app.use(express.static("public"));
 app.use(morgan("common"));
