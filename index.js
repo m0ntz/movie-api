@@ -30,6 +30,10 @@ mongoose.connect(process.env.CONNECTION_URI, {
 app.use(express.static("public"));
 app.use(morgan("common"));
 
+app.get("/", (req, res) => {
+  res.send("Welcome to my Movie App!");
+});
+
 // CREATE New User.
 app.post(
   "/users",
@@ -265,9 +269,9 @@ app.delete(
 );
 
 // GET requests
-app.get("/", (req, res) => {
-  res.send("Welcome to FavFlix!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Welcome to FavFlix!");
+// });
 
 app.get("/documentation", (req, res) => {
   res.sendFile("public/documentation.html", { root: __dirname });
