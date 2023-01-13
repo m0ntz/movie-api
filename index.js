@@ -17,6 +17,7 @@ let allowedOrigins = [
   "http://localhost:4200",
   "https://favflix-app.netlify.app/",
   "https://myfavflixapi.herokuapp.com/",
+  "http://localhost:4200/",
 ];
 app.use(
   cors({
