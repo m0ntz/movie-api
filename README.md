@@ -1,8 +1,9 @@
 #  FavFlix Server-side project
 
+[Final API](https://myfavflixapi.herokuapp.com/)
+
 ## Description
-This is the Server-side component of FavFlix, a “movies” web application. The web application provides users with access to information about different movies, directors, and genres. Users are be able to sign up, update their
-personal information, and create a list of their favorite movies.
+This is the Server-side component of FavFlix, a “movies” web application. The web application provides users with access to information about different movies, directors, and genres. Users are be able to sign up, update their personal information, and create a list of their favorite movies.
 
 Includes the server, business logic, and business layers of the application. It consists of a well-designed REST API and architected database built using JavaScript, Node.js, Express, and MongoDB. The REST API
 is be accessed via commonly used HTTP methods like GET and POST. Similar methods(CRUD) are be used to retrieve data from the database and store that data in a non-relational way.
