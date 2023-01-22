@@ -1,3 +1,9 @@
+/**
+ * @file index.js is the homepage for this application
+ * @author Montserrat Chavez Mulsa
+ * @see <a href="https://github.com/m0ntz">GitHub Montserrat Chavez</a>
+ */
+
 const express = require("express"),
   bodyParser = require("body-parser"),
   uuid = require("uuid"),
