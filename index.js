@@ -330,7 +330,6 @@ app.put(
  * @returns user object
  * @requires passport
  */
-
 app.post(
   "/users/:Username/movies/:MovieID",
   passport.authenticate("jwt", { session: false }),
